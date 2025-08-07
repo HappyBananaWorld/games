@@ -1,0 +1,38 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 2;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 105, 180, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.cardHover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+}
+
+.cardTitle {
+  color: #ff85c1;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cardText {
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
